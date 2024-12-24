@@ -1,0 +1,11 @@
+.Analyzer-sidebar::-webkit-scrollbar {
+	width: 4px;
+}
+.Analyzer-sidebar::-webkit-scrollbar-track {
+	background: #f1f1f1;
+	border-radius: 8px;
+}
+.Analyzer-sidebar::-webkit-scrollbar-thumb {
+	background: #22b827ad;
+	border-radius: 8px;
+}

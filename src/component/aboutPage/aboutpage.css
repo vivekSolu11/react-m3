@@ -1,0 +1,50 @@
+#prodiv {
+	border: 1px solid lightgray;
+}
+
+#explore {
+	color: limegreen;
+	text-decoration: none;
+}
+
+#desc {
+	color: gray;
+
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+.mission {
+	background-image: url(/src/assets/images/aboutBg.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.missionbg {
+	background-image: url(/src/assets/images/missionbg.webp);
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	height: 608px;
+	top: -42px;
+	background-position: center;
+	/* background: radial-gradient(50% 50% at 50% 50%, #d9d9d9 0%, rgba(115, 115, 115, 0) 100%); */
+	z-index: -1;
+}
+
+.btncss {
+	transition: transform 0.5s ease;
+}
+
+.btncss:hover {
+	transform: scale(1.1);
+}
+
+@media screen and (min-width: 320px) and (max-width: 1024px) and (display-mode: browser) and (orientation: portrait) and (max-height: 1024px) and (min-height: 320px) and (-webkit-touch-callout: none) {
+	.ios-button {
+		color: blue !important; /* Set the text color to blue for iOS */
+	}
+}

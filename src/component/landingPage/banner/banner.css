@@ -1,0 +1,9 @@
+.banner-btn {
+	border: 1px solid rgba(96, 221, 100, 1);
+}
+@media (max-width: 400px) {
+	.banner_img {
+		height: 210px;
+		width: 300.98px;
+	}
+}

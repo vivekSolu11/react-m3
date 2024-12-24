@@ -1,0 +1,141 @@
+.container {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	justify-content: center;
+}
+
+@media (max-width: 991px) {
+	.container {
+		max-width: 100%;
+	}
+}
+
+.headerWrapper {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	gap: 8px;
+	color: var(--Text-Primary, #1a1a1a);
+	letter-spacing: -0.32px;
+	justify-content: start;
+	flex-wrap: wrap;
+	font:
+		500 16px/1.4 Work Sans,
+		-apple-system,
+		Roboto,
+		Helvetica,
+		sans-serif;
+}
+
+@media (max-width: 991px) {
+	.headerWrapper {
+		max-width: 100%;
+	}
+}
+
+.headerIcon {
+	aspect-ratio: 1;
+	object-fit: contain;
+	object-position: center;
+	width: 20px;
+	align-self: stretch;
+	margin: auto 0;
+	cursor: pointer;
+}
+
+.headerText {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 22.4px;
+	letter-spacing: -0.02em;
+	text-align: left;
+}
+
+.stepsContainer {
+	align-self: center;
+	display: flex;
+	margin-top: 24px;
+	align-items: start;
+	gap: 16px;
+	justify-content: center;
+}
+
+.stepWrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	letter-spacing: -0.24px;
+	justify-content: center;
+	width: auto;
+	font:
+		400 12px Work Sans,
+		sans-serif;
+}
+
+.stepNumber {
+	border-radius: 40px;
+	min-height: 20px;
+	width: 20px;
+	white-space: nowrap;
+	height: 20px;
+	padding: 0 7px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.stepNumberActive {
+	background: var(--Neutral-Neutral-10, #1a1a1a);
+	color: #fff;
+}
+
+.stepNumberInactive {
+	background: var(--Neutral-Neutral-100, #fff);
+	color: var(--Neutral-Neutral-30, #4d4d4d);
+}
+
+@media (max-width: 991px) {
+	.stepNumber {
+		white-space: initial;
+	}
+}
+
+.stepText {
+	margin-top: 8px;
+}
+
+.stepTextActive {
+	color: var(--Text-Primary, #1a1a1a);
+}
+
+.stepTextInactive {
+	color: var(--Text-Secondary, #666);
+}
+
+.stepDivider {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 65px;
+	padding: 10px 0;
+}
+
+.stepDividerLine {
+	aspect-ratio: 66.67;
+	object-fit: contain;
+	object-position: center;
+	width: 65px;
+	stroke-width: 1px;
+	stroke: var(--Neutral-Neutral-70, #b3b3b3);
+}
+
+.preview_btn {
+	padding: 9px 20px;
+	border-radius: 4px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #e6e6e6;
+}

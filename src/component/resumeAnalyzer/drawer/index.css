@@ -1,0 +1,94 @@
+.Analysis-container {
+	padding-bottom: 24px;
+	letter-spacing: -0.02em;
+	padding-bottom: 12px;
+	border-bottom: 1px solid #e6e6e6;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+.Analysis-title {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 28px;
+}
+.Analysis-data {
+	font-size: 14px;
+	font-weight: 400;
+	color: #333333;
+	display: flex;
+	opacity: 0.6;
+	flex-direction: column;
+	gap: 16px;
+}
+.Analysis-issue-title {
+	margin-bottom: 16px;
+	font-size: 16px;
+	font-weight: 500;
+	padding-bottom: 12px;
+	border-bottom: 1px solid #e6e6e6;
+}
+.Analysis-issue-heading {
+	font-size: 14px;
+	font-weight: 500;
+}
+.Analysis-issue-data {
+	font-size: 14px;
+	color: #666666;
+}
+.btn-gradient {
+	position: relative;
+	z-index: 1;
+	background: linear-gradient(
+		315.59deg,
+		rgba(2, 111, 172, 0.3) 0%,
+		rgba(163, 245, 81, 0.3) 100%
+	) !important;
+	border-radius: 8px;
+	padding: 10px 20px; /* Adjust padding as needed */
+	color: #1a1a1a; /* Adjust text color */
+	overflow: hidden; /* Hide the pseudo-element overflow */
+	box-sizing: border-box;
+}
+
+.btn-gradient::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	border-radius: 8px;
+	padding: 1px; /* Thickness of the border */
+	background: linear-gradient(
+		299.05deg,
+		rgba(163, 245, 81, 0.25) 3.57%,
+		rgba(2, 111, 172, 0.25) 98.21%
+	);
+	-webkit-mask:
+		linear-gradient(#fff 0 0) content-box,
+		linear-gradient(#fff 0 0);
+	-webkit-mask-composite: destination-out;
+	mask-composite: exclude;
+}
+
+.ai-container {
+	border-top: 1px solid #e6e6e6;
+}
+
+@media (max-width: 639px) {
+	.tabs_Container {
+		max-width: 562px;
+		width: 100%;
+		/* width: max(70vw, 330px); */
+		border-radius: 30px 0 0 30px;
+	}
+}
+
+@media (min-width: 640px) {
+	.tabs_Container {
+		width: 510px;
+		border-radius: 30px;
+	}
+}

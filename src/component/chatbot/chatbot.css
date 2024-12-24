@@ -1,0 +1,355 @@
+.chat-header {
+	border-bottom: 1px solid var(--gray);
+}
+
+/* -------------UPDATE_PREFERENCE_MODAL----------------- */
+
+.upload-box {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+.lable {
+	font-size: 14px;
+	color: #121212a8;
+	font-weight: 500;
+}
+.upload {
+	width: 100%;
+	padding: 24px, 40px, 24px, 40px;
+}
+
+.frame input[type='file'] {
+	font-size: 0.01px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	cursor: inherit;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+}
+.frame {
+	align-items: center;
+	border-radius: 8px;
+	cursor: pointer;
+	position: relative;
+	border: 1px dashed var(--Border-Default, #e6e6e6);
+	background-color: #fff;
+	display: flex;
+	width: 100%;
+	gap: 24px;
+	overflow: hidden;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	padding: 24px 40px;
+}
+
+.jobMatchInfo {
+	align-self: stretch;
+	display: flex;
+	min-width: 240px;
+	flex-direction: column;
+	letter-spacing: -0.32px;
+	justify-content: center;
+	flex: 1;
+	flex-basis: 0%;
+	margin: auto 0;
+	font:
+		16px Work Sans,
+		sans-serif;
+}
+
+.matchTitle {
+	color: #000;
+	font-weight: 500;
+}
+@media (max-width: 768px) {
+	.mobileMatchTitle {
+		color: #fff;
+		font-size: 14px;
+		font-weight: 500;
+	}
+}
+
+.matchDescription {
+	color: #9a9a9a;
+	font-weight: 400;
+	margin-top: 8px;
+}
+@media (max-width: 768px) {
+	.mobileMatchDescription {
+		color: #fff !important;
+		font-size: 12px;
+		font-weight: 400;
+	}
+}
+@media (max-width: 768px) {
+	.mobileDescription {
+		font-size: 14px;
+	}
+}
+
+.uploadSection {
+	align-self: stretch;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	justify-content: flex-start;
+	margin: auto 0;
+}
+
+.iconWrapper {
+	border-radius: 127px;
+	background-color: #f4f4f4;
+	align-self: stretch;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 56px;
+	height: 56px;
+	margin: auto 0;
+	padding: 13px;
+}
+
+.uploadIcon {
+	aspect-ratio: 1;
+	object-fit: contain;
+	object-position: center;
+	width: 30px;
+	height: 30px;
+}
+
+.uploadText {
+	color: #000;
+	align-self: stretch;
+	margin: auto 0;
+	font:
+		400 14px Work Sans,
+		sans-serif;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+.how-upload-box {
+	padding: 16px;
+	border-radius: 8px;
+	display: flex;
+	background-color: #a2bff6e5;
+}
+.how-upload-box .matchDescription {
+	color: #0c182fb2;
+	width: 70%;
+}
+
+.Upload_Img {
+	background-image: url(../../assets/images/UpdatePrefernceMobileImg.png);
+	background-size: cover;
+}
+
+.line-box {
+	display: flex;
+	flex-direction: row;
+	gap: 8px;
+	padding: 8px 0;
+	align-items: center;
+}
+.line {
+	width: 100%;
+
+	height: 1px;
+	background-color: var(--gray);
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+}
+.fields {
+	display: flex;
+	gap: 16px;
+}
+.fields div {
+	flex: 1;
+}
+.labelSelection {
+	border-radius: 8px;
+	background: #fff;
+	color: #ccc;
+	padding: 8px 16px;
+	cursor: pointer;
+	border: 1px solid #ccc;
+}
+.active {
+	border-radius: 8px;
+	border: 1px solid rgba(14, 135, 18, 0.25);
+	background: #edfded;
+	color: #0e8712;
+}
+.labels {
+	display: flex;
+	margin-top: 5px;
+	gap: 12px;
+}
+
+/* ---------------------uploaded File----------------------- */
+.fileUploadContainer {
+	justify-content: center;
+	align-self: stretch;
+	border-radius: 12px;
+	border: 1px solid var(--Border-Default, #e6e6e6);
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+	background-color: #fff;
+	display: flex;
+	gap: 24px;
+	overflow: hidden;
+	flex-wrap: wrap;
+	padding: 16px;
+}
+@media (max-width: 768px) {
+	.fileUploadContainer {
+		gap: 6px;
+		padding: 8px;
+	}
+}
+
+.fileInfoWrapper {
+	display: flex;
+	min-width: 240px;
+	align-items: center;
+	gap: 8px;
+	justify-content: start;
+	flex-wrap: wrap;
+	flex: 1;
+	flex-basis: 24px;
+	margin: auto 0;
+}
+
+.iconContainer {
+	border-radius: 12px;
+	background-color: rgba(244, 244, 244, 1);
+	align-self: stretch;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 48px;
+	height: 48px;
+	margin: auto 0;
+	padding: 0 8px;
+}
+
+.fileIcon {
+	object-fit: contain;
+	object-position: center;
+	width: 32px;
+	align-self: stretch;
+	margin: auto 0;
+}
+
+.fileDetails {
+	align-self: stretch;
+	display: flex;
+	min-width: 240px;
+	flex-direction: column;
+	font-family:
+		Work Sans,
+		sans-serif;
+	justify-content: center;
+	flex: 1;
+	flex-basis: 16px;
+	margin: auto 0;
+}
+@media (max-width: 768px) {
+	.fileDetails {
+		min-width: 180px;
+		flex-wrap: nowrap;
+	}
+}
+
+.fileName {
+	color: #000;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.4;
+	letter-spacing: -0.32px;
+}
+@media (max-width: 768px) {
+	.fileName {
+		font-size: 14px;
+	}
+}
+.fileInfo {
+	color: rgba(154, 154, 154, 1);
+	font-size: 14px;
+	font-weight: 400;
+	margin-top: 4px;
+	text-transform: uppercase;
+}
+
+.actionButton {
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px;
+	border: 1px solid var(--Border-Default, #e6e6e6);
+	display: flex;
+	gap: 8px;
+	height: 48px;
+	width: 48px;
+	cursor: pointer;
+	padding: 0 12px;
+}
+
+.actionIcon {
+	aspect-ratio: 1;
+	object-fit: contain;
+	object-position: center;
+	width: 24px;
+	align-self: stretch;
+	margin: auto 0;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+.rotate-icon {
+	rotate: -90deg;
+}
+
+/* ------------------MOBILE BOT CSS------------------- */
+.mobileChatbotborder {
+	background:
+		linear-gradient(white, white) padding-box,
+		linear-gradient(136.38deg, #abff9f, #9fffff) border-box;
+	border-radius: 12px;
+	border: 1px solid transparent;
+}
+.Areaborder {
+	border-bottom: 1px solid var(--gray);
+}
+
+.mobileChatShadow {
+	box-shadow: 0px 2px 12px 0px #00000026;
+}
+
+@media (max-width: 541px) {
+	.landing-chatbot {
+		min-height: calc(100vh - 20px) !important;
+	}
+}

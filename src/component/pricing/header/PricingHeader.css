@@ -1,0 +1,13 @@
+.joblo-logo-text {
+	color: transparent;
+	font-weight: 600;
+}
+.Ai-icon-blue {
+	filter: invert(44%) sepia(55%) saturate(2783%) hue-rotate(197deg) brightness(98%) contrast(95%);
+}
+.pricing-starting-gradient {
+	background: linear-gradient(270deg, rgba(255, 255, 255, 0) -11.83%, #ffffff 57.69%);
+}
+.pricing-ending-gradient {
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0) -11.83%, #ffffff 57.69%);
+}

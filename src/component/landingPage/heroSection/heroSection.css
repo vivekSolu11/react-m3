@@ -1,0 +1,61 @@
+/* Label animation styles */
+.anim-label {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-wrap: nowrap;
+	text-align: left;
+	overflow: hidden;
+	pointer-events: none;
+	z-index: 0;
+}
+.headerText {
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+.subText {
+	font-size: 0.875rem /* 14px */;
+	line-height: 1.25rem /* 20px */;
+}
+
+.anim-label.activelabel {
+	display: none;
+}
+
+.anim-label > span {
+	position: relative;
+	animation: placeholderAnimation 2.2s infinite;
+}
+
+@keyframes placeholderAnimation {
+	0% {
+		opacity: 0;
+		top: 25px;
+	}
+	50% {
+		opacity: 1;
+		top: 0px;
+	}
+	100% {
+		opacity: 0;
+		top: -25px;
+	}
+}
+
+@media (max-width: 992px) {
+	.anim-label > span {
+		animation: placeholderAnimation 2.2s infinite;
+	}
+}
+
+@media (min-width: 768px) {
+	.headerText {
+		line-height: 75px;
+		font-size: 64px;
+	}
+	.subText {
+		font-size: 1.5rem;
+		line-height: 1.75rem;
+	}
+}

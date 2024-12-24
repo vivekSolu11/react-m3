@@ -1,0 +1,283 @@
+#jobmdiv {
+	border: 1px solid rgba(244, 244, 244, 1);
+	box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.1);
+	background: rgba(255, 255, 255, 1);
+}
+
+#conn {
+	background-color: rgba(106, 1, 94, 0.05);
+	color: rgba(106, 1, 94, 1);
+}
+
+#sal {
+	background-color: rgba(61, 231, 106, 0.05);
+	color: rgba(4, 106, 1, 1);
+}
+
+#early {
+	background-color: rgba(1, 38, 106, 0.05);
+	color: rgba(1, 38, 106, 1);
+}
+
+#status {
+	color: rgba(14, 135, 18, 1);
+}
+
+#match {
+	color: rgba(96, 221, 100, 1);
+}
+
+#star {
+	background: linear-gradient(180deg, #4e42f4 0%, #89a9df 100%);
+	color: transparent;
+}
+
+/* chips css */
+.common-chip {
+	font-size: 11px;
+	font-weight: 500;
+	padding: 4px 8px;
+	border-radius: 4px;
+	letter-spacing: 0.02rem;
+}
+
+.chip-mobile {
+	border-radius: 4px;
+	font-size: 11px;
+	font-weight: 500;
+	letter-spacing: 0.02rem;
+}
+
+#progress {
+	color: #0e8712;
+}
+
+#border-down {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* jobs button css */
+#buddybtn {
+	border: 1px solid #e6e6e6;
+	box-shadow: none;
+	border-radius: 4px;
+}
+
+#applybtn {
+	border-radius: 4px;
+}
+
+.borderpost {
+	padding-right: 8px;
+	border-right: 1px solid rgba(204, 204, 204, 1);
+}
+
+/* jobmatchcard css */
+.bordercss {
+	border-top: 1px solid #f2f2f2;
+}
+
+@media screen and (min-width: 768px) {
+	.bordercss {
+		border-top: none;
+	}
+}
+
+/* job css for jobmatchcard */
+.jobmatch {
+	height: 113px;
+}
+
+/*  jobsdetails css for jobmatchcard */
+
+.jobmatch-details {
+	background-color: #f5fff5;
+	max-width: 552px;
+	width: 100%;
+	padding: 16px 12px 0;
+}
+
+/* / jobprogress css / */
+
+.bg-great-custom {
+	background-color: #f5fff5;
+	background-image: url('../../assets/SVGs/Bggreat.svg');
+	background-size: 100% 100%;
+	border-radius: 9px;
+}
+
+.bg-average-custom {
+	background-color: #fffbf5;
+	background-image: url('../../assets/SVGs/BGaverage.svg');
+	background-size: 100% 100%;
+	border-radius: 9px;
+}
+
+.bg-bad-custom {
+	background-color: #fff5f6;
+	background-image: url('../../assets/SVGs/Bgbad.svg');
+	background-size: 100% 100%;
+	border-radius: 9px;
+}
+
+.bg-gray-custom {
+	background-color: #e5e7eb;
+}
+
+.hoverchang {
+	position: relative;
+	z-index: 1;
+	border-radius: 9px;
+
+	box-sizing: border-box;
+	overflow: hidden;
+	/* Ensures the pseudo-element stays within bounds */
+}
+
+@media screen and (min-width: 768px) {
+	.hoverchang:hover {
+		background-color: #363636;
+	}
+}
+
+.hoverchang::before {
+	overflow: hidden;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 9px;
+	/* Same border-radius as the element */
+	padding: 1px;
+	/* Border thickness */
+	background: linear-gradient(
+		222.74deg,
+		rgba(14, 135, 18, 0.4) 1.5%,
+		rgba(14, 135, 18, 0.08) 49.85%,
+		rgba(14, 135, 18, 0.4) 98.19%
+	);
+	z-index: -1;
+	/* Keep it behind the main element */
+	mask:
+		linear-gradient(#fff 0 0) content-box,
+		linear-gradient(#fff 0 0);
+	mask-composite: exclude;
+	-webkit-mask:
+		linear-gradient(#fff 0 0) content-box,
+		linear-gradient(#fff 0 0);
+	-webkit-mask-composite: destination-out;
+}
+
+.card-action {
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+}
+
+button.apply-btn:disabled {
+	background: rgba(242, 242, 242, 1);
+	color: rgba(179, 179, 179, 1);
+	cursor: not-allowed;
+}
+
+.apply-btn {
+	background-color: rgba(118, 255, 122, 1);
+	color: black;
+	cursor: pointer;
+}
+
+@media (min-width: 768px) {
+	.apply-btn {
+		padding: 6px 12px;
+	}
+}
+
+/* jobdescription css */
+@media (min-width: 1280px) and (max-width: 1340px) {
+	.jobdetails_css {
+		column-gap: 0rem !important;
+		gap: 3px !important;
+	}
+}
+
+/* jobtitles css */
+@media (min-width: 1280px) and (max-width: 1370px) {
+	.truncate-custom {
+		display: inline-block; /* Ensure it works on inline elements */
+		max-width: 330px; /* Adjust the width as needed to fit the space */
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 995px) {
+	.truncate-custom {
+		display: inline-block; /* Ensure it works on inline elements */
+		max-width: 330px; /* Adjust the width as needed to fit the space */
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1092px) {
+	.truncate-custom {
+		display: inline-block; /* Ensure it works on inline elements */
+		max-width: 330px; /* Adjust the width as needed to fit the space */
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+}
+
+@media (min-width: 1370px) and (max-width: 1456px) {
+	.truncate-custom {
+		display: inline-block; /* Ensure it works on inline elements */
+		max-width: 330px; /* Adjust the width as needed to fit the space */
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+}
+
+/* jobatchcard media queries */
+@media (min-width: 1280px) and (max-width: 1370px) {
+	.custom-style {
+		align-items: center !important;
+		margin-top: 0 !important;
+	}
+}
+
+@media (min-width: 1026px) and (max-width: 1067px) {
+	.mobCss {
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 1420px) {
+	.mobile-card {
+		margin: 5px !important;
+		padding-top: 0px !important;
+		padding-bottom: 0px !important;
+	}
+	.screen-card {
+		padding: 0px !important;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1135px) {
+	.mobile-card {
+		padding-top: 0px !important;
+		padding-bottom: 0px !important;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 995px) {
+	.mobCss {
+		margin-top: 0px !important;
+		margin-bottom: 0px !important;
+	}
+}

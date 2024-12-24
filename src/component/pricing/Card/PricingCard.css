@@ -1,0 +1,35 @@
+.pricing-card {
+	border: 1px solid;
+	position: relative;
+	background-color: white;
+	overflow: hidden;
+	box-shadow:
+		0px 18.45px 5.15px 0px #cffda81a,
+		0px 0.75px 1.63px 0px #d1fea542,
+		0px 2.89px 2.89px 0px #d1fea545,
+		0px 6.65px 4.02px 0px #d1fea52b,
+		0px 11.8px 4.77px 0px #d1fea526;
+}
+.pricing-gradient-border::before {
+	content: '' !important;
+	position: absolute;
+
+	inset: 0;
+	padding: 1px; /* Width of the gradient border */
+	border-radius: inherit;
+	-webkit-mask:
+		linear-gradient(#fff 0 0) content-box,
+		linear-gradient(#fff 0 0);
+	mask:
+		linear-gradient(#fff 0 0) content-box,
+		linear-gradient(#fff 0 0);
+	mask-composite: exclude; /* Masks to create the transparent inner area */
+}
+
+.pricing-gradient-border {
+	border: transparent;
+}
+.pricing-card-content {
+	position: relative;
+	z-index: 1; /* Ensures content appears above the gradient border */
+}

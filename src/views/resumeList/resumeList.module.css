@@ -1,0 +1,104 @@
+.container {
+	padding: 20px 16px;
+	background: white;
+	border-radius: 4px;
+}
+
+.title {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 28px;
+	letter-spacing: -0.02em;
+	text-align: left;
+	margin-bottom: 24px;
+}
+
+.resumeSections {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.flexContainer {
+	display: flex;
+	gap: 16px;
+	flex-direction: column;
+	width: 100%;
+}
+
+.wrapper {
+	background-color: #f5f5f5;
+	padding: 24px 16px;
+	border-radius: 8px;
+}
+
+.wrapperNoPadding {
+	background-color: #f5f5f5;
+	padding-left: 16px;
+	padding-right: 16px;
+	border-radius: 8px;
+}
+
+.container {
+	/* Custom styles for container */
+}
+
+.title {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.resumeSections {
+	/* Custom styles for resume sections */
+}
+
+.faqContainer {
+	background-color: white;
+	padding: 32px 16px 24px;
+}
+
+.faqHeader {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.faqTitle {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 28px;
+	letter-spacing: -0.02em;
+	text-align: left;
+}
+
+.faqDescription {
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 18px;
+	letter-spacing: -0.02em;
+	text-align: left;
+	margin-top: 8px;
+}
+
+.faqItem {
+	background-color: white;
+}
+
+.faqAnsText {
+	font-size: 12px;
+}
+
+.faqQuesText {
+	font-size: 14px;
+}
+
+.faqBody {
+	margin-top: 32px;
+	background-color: white;
+}
+
+.createSection {
+	height: calc(100vh - 81px);
+	overflow-y: scroll;
+	width: 100%;
+}

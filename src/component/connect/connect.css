@@ -1,0 +1,49 @@
+.customDropCSS {
+	border: 1px solid #e6e6e6;
+}
+
+.borderchips {
+	border: 1px solid var(--color-border-light, #cccccc);
+	border-radius: var(--border-radius-large, 12px);
+}
+
+.button-action {
+	border: 1px solid var(--color-action, #60dd64);
+	border-radius: var(--border-radius-small, 4px);
+}
+
+/* connect card cardList Css */
+.card_container1 {
+	display: grid;
+	grid-template-columns: repeat(
+		auto-fit,
+		minmax(150px, 1fr)
+	); /* Default for extra small screens */
+}
+
+@media (max-width: 941px) {
+	/* Below 942px, show only one card */
+	.card_container1 {
+		grid-template-columns: 1fr; /* Single card per row */
+	}
+}
+
+@media (min-width: 942px) {
+	/* Medium screens and above */
+	.card_container1 {
+		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* Adjust for medium screens */
+	}
+}
+
+@media (min-width: 1024px) {
+	/* Large screens (lg) */
+	.card_container1 {
+		grid-template-columns: repeat(auto-fit, minmax(231px, 1fr)); /* Adjust for large screens */
+	}
+}
+
+/* mobile location css */
+.mob-location_container {
+	border-left: 1px solid #cccccc;
+	padding-left: 8px;
+}

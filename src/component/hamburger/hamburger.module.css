@@ -1,0 +1,182 @@
+.headerTab {
+	display: flex;
+	max-width: 811px;
+	align-items: center;
+	gap: 20px;
+	font-family:
+		Work Sans,
+		sans-serif;
+	white-space: nowrap;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	padding: 24px 16px;
+}
+@media (max-width: 640px) {
+	.headerTab {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 768px) {
+	.headerTab {
+		gap: 0;
+		padding: 0;
+	}
+}
+
+.menuTitle {
+	align-self: stretch;
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	font-size: 24px;
+	color: #000;
+	font-weight: 600;
+	letter-spacing: -0.48px;
+	line-height: 1.4;
+	justify-content: flex-start;
+	margin: auto 0;
+}
+
+@media (max-width: 768px) {
+	.menuTitle {
+		padding: 14px 16px;
+	}
+}
+
+.menuText {
+	align-self: stretch;
+	margin: auto 0;
+
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 33.6px;
+	letter-spacing: -0.02em;
+}
+
+.menuIcon {
+	aspect-ratio: 1;
+	object-fit: contain;
+	object-position: center;
+	width: 20px;
+	align-self: stretch;
+	margin: auto 0;
+}
+
+.notificationIcon {
+	aspect-ratio: 1;
+	object-fit: contain;
+	object-position: center;
+	width: 24px;
+	align-self: stretch;
+	margin: auto 0;
+}
+@media (max-width: 640px) {
+	.notificationIcon {
+		display: none;
+	}
+}
+
+.subMenuContainer {
+	align-self: stretch;
+	display: flex;
+	min-width: 240px;
+	align-items: center;
+	gap: 16px;
+	font-weight: 500;
+	justify-content: flex-start;
+	margin: auto 0;
+}
+
+@media (max-width: 768px) {
+	.subMenuContainer {
+		display: flex;
+		flex-direction: row;
+		gap: 8px;
+		padding: 12px 16px;
+	}
+}
+
+@media (max-width: 991px) {
+	.headerTab,
+	.menuTitle,
+	.subMenuContainer {
+		white-space: initial;
+	}
+}
+
+/* SubMenu */
+
+.subMenu {
+	border-radius: 31px;
+	align-self: stretch;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	gap: 8px;
+	justify-content: flex-start;
+	margin: auto 0;
+	padding: 4px 4px 4px 8px;
+}
+
+.subMenuText {
+	color: var(--Neutral-Neutral-30, #4d4d4d);
+	font-size: 14px;
+	letter-spacing: -0.28px;
+	align-self: stretch;
+	margin: auto 0;
+	padding: 2px 6px;
+}
+
+.badge {
+	border-radius: 24px;
+	background-color: rgba(0, 48, 1, 1);
+	align-self: stretch;
+	overflow: hidden;
+	font-size: 12px;
+	color: rgba(255, 255, 255, 1);
+	margin: auto 0;
+	padding: 0 6px;
+	font-weight: 500;
+}
+
+.recommended {
+	align-self: stretch;
+	border-radius: 31px;
+	background-color: rgba(1, 52, 2, 1);
+	gap: 8px;
+	font-size: 14px;
+	color: #daffdb;
+	letter-spacing: -0.28px;
+	margin: auto 0;
+	padding: 2px 8px;
+
+	.subMenuText {
+		color: rgba(218, 255, 219, 1);
+	}
+
+	.badge {
+		background-color: rgba(218, 255, 219, 1);
+		color: rgba(1, 52, 2, 1);
+	}
+}
+
+@media (max-width: 768px) {
+	.subMenu {
+		border: 1px solid #e6e6e6;
+	}
+}
+
+@media (max-width: 991px) {
+	.subMenu,
+	.badge,
+	.recommended {
+		white-space: initial;
+	}
+}
+
+@media (max-width: 768px) {
+	.menuText {
+		margin-left: 16.5px;
+	}
+}

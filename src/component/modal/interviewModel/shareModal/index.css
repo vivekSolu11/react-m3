@@ -1,0 +1,13 @@
+@media (min-width: 600px) {
+	.linkcopy_css {
+		border: 0.5px solid #0000003d;
+		border-radius: 8px;
+	}
+}
+
+.truncate-text {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 592px;
+}

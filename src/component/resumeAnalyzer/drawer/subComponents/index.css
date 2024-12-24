@@ -1,0 +1,47 @@
+.updated_shadow {
+	box-shadow: 0px 4px 24px 0px #00000014;
+}
+.issue_container {
+	padding: 12px;
+	font-size: 14px;
+	letter-spacing: -0.02em;
+	border: 1px solid #e6e6e6;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+.traking-letter ul {
+	letter-spacing: -0.025em;
+}
+.update-Ai {
+	position: relative;
+	z-index: 1;
+	background: linear-gradient(
+		315.59deg,
+		rgba(2, 111, 172, 0.3) 0%,
+		rgba(163, 245, 81, 0.3) 100%
+	) !important;
+	border-radius: 8px;
+	padding: 10px 20px; /* Adjust padding as needed */
+	color: #1a1a1a; /* Adjust text color */
+	overflow: hidden; /* Hide the pseudo-element overflow */
+	box-sizing: border-box;
+}
+
+.update-Ai::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	border-radius: 8px;
+	padding: 1px; /* Thickness of the border */
+	background: linear-gradient(
+		299.05deg,
+		rgba(163, 245, 81, 0.25) 3.57%,
+		rgba(2, 111, 172, 0.25) 98.21%
+	);
+}

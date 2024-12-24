@@ -1,0 +1,37 @@
+.dottedborder {
+	border: 1px dashed #cccccc;
+}
+
+.normalborder {
+	border: 1px solid #f2f2f2;
+}
+.line-container h2 {
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.line-container h2::before,
+.line-container h2::after {
+	content: '';
+	flex: 1;
+	border-bottom: 1px solid #0000001f;
+}
+
+.line-container h2::before {
+	margin-right: 8px; /* Adjust to control spacing between line and text */
+}
+
+.line-container h2::after {
+	margin-left: 8px; /* Adjust to control spacing between line and text */
+}
+
+.line-container span {
+	white-space: nowrap;
+	background-color: #fff; /* Ensure text has background to hide line */
+	padding: 0px; /* Control space around text */
+}
+.drag-active {
+	border-color: #007bff; /* Example: Change border color on drag */
+	background-color: #f1f1f1; /* Example: Change background color */
+}

@@ -1,0 +1,29 @@
+.header {
+	margin: 0 120px;
+	padding: 0;
+	height: 80px;
+	box-shadow: inset 14px 0px 11px 0px #00000029;
+}
+
+.menu_items {
+	color: rgba(106, 106, 106, 1);
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.menu_items:hover {
+	color: rgba(18, 18, 18, 1);
+}
+
+button.sign_in {
+	color: rgba(20, 160, 25, 1);
+	border: 1px solid rgba(96, 221, 100, 1);
+	padding: 13px 28px;
+}
+
+button.join {
+	font-weight: 500;
+	color: black;
+	padding: 13px 28px;
+}

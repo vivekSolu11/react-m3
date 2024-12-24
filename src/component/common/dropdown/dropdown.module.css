@@ -1,0 +1,29 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 8px;
+}
+.label {
+	text-transform: capitalize;
+	font-size: 16px !important;
+	font-weight: 500 !important;
+	color: #666 !important;
+}
+
+.white {
+	background: rgb(255, 255, 255);
+	border: none !important;
+}
+.whiterounded {
+	background: white;
+	border: none !important;
+}
+.white fieldset,
+.whiterounded fieldset {
+	border: none !important;
+}
+
+.autocomplate input::placeholder {
+	color: black;
+}

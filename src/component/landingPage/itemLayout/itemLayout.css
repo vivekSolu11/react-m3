@@ -1,0 +1,33 @@
+.banner_image {
+	max-width: 639px;
+	width: 100%;
+	z-index: 1;
+	position: relative;
+}
+
+.gradient-bg {
+	height: 345.03px;
+	max-width: 577.81px;
+	width: 100%;
+	top: 90px;
+	z-index: 0;
+	background-color: #e2f7f1;
+	transform: rotate(35.25deg);
+	filter: blur(100px);
+}
+
+@media (max-width: 1280px) {
+	.gradient-bg {
+		top: 40px;
+		max-width: calc(100vw - 100px);
+	}
+}
+
+@media (max-width: 768px) {
+	.banner_imageMob {
+		max-width: 328px;
+		width: 100%;
+		z-index: 1;
+		position: relative;
+	}
+}

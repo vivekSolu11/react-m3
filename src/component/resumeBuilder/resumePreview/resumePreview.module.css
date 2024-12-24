@@ -1,0 +1,336 @@
+.container {
+	border-radius: 12px 12px 0 0;
+	border: 1px solid rgba(224, 224, 224, 1);
+	border-bottom: none;
+	display: flex;
+	min-width: 240px;
+	flex-direction: column;
+	overflow: hidden;
+	font-family:
+		Work Sans,
+		sans-serif;
+	width: 557px;
+}
+
+@media (max-width: 991px) {
+	.container {
+		max-width: 100%;
+	}
+}
+
+.header {
+	background-color: #fff;
+	border-bottom: 1px solid rgba(224, 224, 224, 1);
+	display: flex;
+	max-width: 100%;
+	width: 557px;
+	align-items: center;
+	gap: 16px;
+	overflow: hidden;
+	font-size: 16px;
+	letter-spacing: -0.32px;
+	padding: 16px;
+	justify-content: space-between;
+}
+
+.headerContent {
+	align-self: stretch;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.headerTitle {
+	color: var(--Text-Secondary, #666);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.4;
+}
+
+.fileNameWrapper {
+	display: flex;
+	margin-top: 4px;
+	align-items: center;
+	font-size: 16px;
+	gap: 4px;
+	color: var(--Text-Primary, #1a1a1a);
+	font-weight: 500;
+	white-space: nowrap;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+@media (max-width: 991px) {
+	.fileNameWrapper {
+		white-space: initial;
+	}
+}
+
+.fileName {
+	align-self: stretch;
+	font-size: 16px;
+	margin: auto 0;
+}
+
+.fileIcon {
+	aspect-ratio: 1;
+	object-fit: contain;
+	object-position: center;
+	width: 16px;
+	align-self: stretch;
+	margin: auto 0;
+}
+
+.mainContent {
+	background-color: #fafafa;
+	position: relative;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	overflow: hidden;
+	font-weight: 400;
+	line-height: 1.4;
+	flex: 1;
+	padding: 24px;
+	gap: 20px;
+}
+
+@media (max-width: 991px) {
+	.mainContent {
+		max-width: 100%;
+		padding: 20px 20px 0px;
+	}
+}
+
+.controlsWrapper {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	gap: 24px;
+	font-size: 16px;
+	color: #121212;
+	letter-spacing: -0.32px;
+}
+
+@media (max-width: 991px) {
+	.controlsWrapper {
+		max-width: 100%;
+	}
+}
+
+.lineSpacingControl {
+	align-self: stretch;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin: auto 0;
+}
+
+.lineSpacingLabel {
+	opacity: 0.6;
+	align-self: stretch;
+	margin: auto 0;
+}
+
+.lineSpacingInput {
+	border-radius: 8px;
+	border: 1px solid var(--Grey-1, #d1d1d1);
+	background-color: #fff;
+	white-space: nowrap;
+	padding: 4px 8px;
+	height: 30px;
+	width: 76px;
+	font-size: 16px;
+	font-weight: 400;
+	z-index: 5;
+}
+
+select {
+	appearance: none;
+}
+
+@media (max-width: 991px) {
+	.lineSpacingInput {
+		white-space: initial;
+	}
+}
+
+.lineSpacingValue {
+	align-self: stretch;
+	width: 32px;
+	margin: auto 0;
+}
+
+.dropdownIcon {
+	max-width: 10px;
+	width: 100%;
+	height: 5px;
+	position: absolute;
+	top: 12px;
+	right: 14px;
+}
+
+.navigationControls {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	gap: 40px 100px;
+	font-size: 20px;
+	color: var(--Neutral-Neutral-10, #1a1a1a);
+	white-space: nowrap;
+	letter-spacing: -0.4px;
+	justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+	.navigationControls {
+		max-width: 100%;
+		white-space: initial;
+	}
+}
+
+.paginationControl {
+	align-self: stretch;
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	margin: auto 0;
+}
+
+@media (max-width: 991px) {
+	.paginationControl {
+		white-space: initial;
+	}
+}
+
+.paginationIcon {
+	aspect-ratio: 1;
+	object-fit: contain;
+	object-position: center;
+	width: 20px;
+	align-self: stretch;
+	margin: auto 0;
+}
+
+.paginationInfo {
+	align-self: stretch;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin: auto 0;
+}
+
+@media (max-width: 991px) {
+	.paginationInfo {
+		white-space: initial;
+	}
+}
+
+.pageNumber {
+	align-self: stretch;
+	margin: auto 0;
+}
+
+.zoomControl {
+	align-self: stretch;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin: auto 0;
+}
+
+@media (max-width: 991px) {
+	.zoomControl {
+		white-space: initial;
+	}
+}
+
+.zoomIcon {
+	aspect-ratio: 1;
+	object-fit: contain;
+	object-position: center;
+	width: 20px;
+	align-self: stretch;
+	margin: auto 0;
+}
+
+.previewImage {
+	width: 449px;
+	max-width: 100%;
+	height: 636px;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+.resume_control {
+	border: none;
+	background: transparent;
+	padding-top: 5px;
+	cursor: pointer;
+}
+
+.resume_control:disabled {
+	cursor: unset;
+}
+
+.react-transform-component {
+	transform: translate(0px, 0px) scale(1);
+}
+
+.selectBody {
+	position: relative;
+}
+
+.completionContainer {
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-family:
+		Work Sans,
+		sans-serif;
+	font-weight: 500;
+	line-height: 1.4;
+	justify-content: start;
+	padding: 4px 0 4px 8px;
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	cursor: pointer;
+}
+
+.completionLabel {
+	color: var(--Text-Primary, #1a1a1a);
+	font-size: 16px;
+	letter-spacing: -0.32px;
+	align-self: stretch;
+	margin: auto 0;
+}
+
+.completionPercentage {
+	border-radius: 4px;
+	background: var(--Primary-Green-100, #edfded);
+	align-self: stretch;
+	gap: 8px;
+	font-size: 20px;
+	color: var(--Primary-Green-900, #0e8712);
+	white-space: nowrap;
+	letter-spacing: -0.4px;
+	margin: auto 0;
+	padding: 4px;
+}
+
+.template_preview {
+	max-width: 800px;
+	width: 100%;
+	height: auto;
+}

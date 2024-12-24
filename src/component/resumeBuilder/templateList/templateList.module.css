@@ -1,0 +1,51 @@
+.templateGallery {
+	border-radius: 4px;
+	background-color: var(--Neutral-Neutral-100, #fff);
+	display: flex;
+	margin-top: 24px;
+	width: 100%;
+	flex-direction: column;
+	font-family:
+		Work Sans,
+		sans-serif;
+	font-weight: 500;
+	padding: 20px 16px;
+	height: 100%;
+	height: calc(100vh - 365px);
+	overflow-y: scroll;
+}
+
+.galleryTitle {
+	color: #000;
+	font-size: 20px;
+	line-height: 1.4;
+	letter-spacing: -0.4px;
+	margin-bottom: 20px;
+}
+
+.templateSection {
+	margin-top: 24px;
+}
+
+.sectionTitle {
+	color: var(--Text-Secondary, #666);
+	font-size: 16px;
+	line-height: 1.4;
+	letter-spacing: -0.32px;
+}
+
+.templateGrid {
+	display: flex;
+	margin-top: 12px;
+	width: 100%;
+	max-width: 508px;
+	align-items: center;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+@media (max-width: 991px) {
+	.templateGallery {
+		max-width: 100%;
+	}
+}

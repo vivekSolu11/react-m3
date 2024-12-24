@@ -1,0 +1,15 @@
+export { AskBuddydata } from './AskBuddy';
+export { Aboutdata } from './JobDetailAbout';
+export { JobDetail } from './JobDetail';
+export { Qualifications } from './Qualtifications';
+export { faqData } from './faqQuestions';
+export { CompanyData } from './CompanyData';
+export { InsightsData } from './InsightsData';
+export { jobData } from './JobData';
+export { AnalysisData } from './AnalysisData';
+export { ResumeReportFull } from './ResumeReportFull';
+export { FixSummaryData } from './FixSummaryData';
+export { DiscoverData } from './DiscoverData';
+export { DiscoverCompanyData } from './DiscoverCompany';
+export { DiscoverNews } from './DiscoverNews';
+export { ProfileData } from './ProfileData';

@@ -1,0 +1,66 @@
+import { COURSERA_ICON, EDX_ICON, UDEMY_ICON } from 'assets/images';
+
+export const courses = [
+	{
+		platform: 'Coursera',
+		title: 'Introduction to Strategic Management',
+		duration: '1-3 Months',
+		price: '₹2,047 per month',
+		rating: '4.7',
+		reviews: '4k',
+		type: 'Mixed',
+		icon: COURSERA_ICON,
+	},
+	{
+		platform: 'Udemy',
+		title: 'Python for Data Science and Machine Learning Bootcamp',
+		duration: '2-3 Months',
+		price: '₹1,999 one-time',
+		rating: '4.5',
+		reviews: '10k',
+		type: 'Online',
+		icon: UDEMY_ICON,
+	},
+	{
+		platform: 'edX',
+		title: 'Computer Science Essentials for Software Development',
+		duration: '4-5 Months',
+		price: '₹3,500 one-time',
+		rating: '4.8',
+		reviews: '2k',
+		type: 'Self-paced',
+		icon: EDX_ICON,
+	},
+	{
+		platform: 'Coursera',
+		title: 'Graphic Design Masterclass: Learn Design Principles, Color Theory, and Typography',
+		duration: '2-3 Months',
+		price: '₹999 per year',
+		rating: '4.6',
+		reviews: '5k',
+		type: 'On-demand',
+		icon: COURSERA_ICON,
+	},
+	{
+		platform: 'Coursera',
+		title: 'Introduction to Strategic Management',
+		duration: '2-3 Months',
+		price: '₹2,047 per months',
+		rating: '4.6',
+		reviews: '4k',
+		type: 'Mixed',
+		icon: COURSERA_ICON,
+	},
+	{
+		platform: 'Udemy',
+		title: 'Python for Data Science and Machine Learning Bootcamp',
+		duration: '2-3 Months',
+		price: '₹1,999 one-time',
+		rating: '4.5',
+		reviews: '10k',
+		type: 'Online',
+		icon: UDEMY_ICON,
+	},
+
+	// Add more courses as needed
+];

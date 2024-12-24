@@ -1,0 +1,127 @@
+/* header/CareerHeader css */
+.back_btn {
+	box-shadow: 0px 1px 2px 0px #0000000d;
+	border: none;
+}
+
+/* Header card css */
+.headcard_container {
+	border: 1px solid #e6e6e6;
+	box-shadow: 0px 1px 2px 0px #0000000d;
+}
+
+/* careeradvform */
+.arrow_btn {
+	box-shadow: 0px 1px 2px 0px #0000000d;
+	border: 1px solid #666666;
+	padding: 8px;
+	border-radius: 28px;
+	background: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.arrow-btn {
+	transform: rotate(90deg);
+}
+
+/* Reset rotation for large screens */
+@media (min-width: 1024px) {
+	.arrow-btn {
+		transform: rotate(0deg);
+	}
+}
+
+/* RoleCard */
+.card_container {
+	border: 1px solid #e6e6e6;
+	box-shadow: 0px 1px 2px 0px #0000000d;
+}
+
+/* Reliability Section */
+.main_container {
+	border: 1px solid #0000001f;
+	border-radius: 8px;
+}
+
+/* coursers card Css */
+.uparrow_icon {
+	border: 1px solid #f5f5f5;
+	/* border-radius: 24px; */
+}
+.courdeslist_container {
+	border: 1px solid #0056d240;
+	box-shadow: 0px 8px 0px -2.5px #0056d240;
+}
+
+.coscard_container {
+	display: grid;
+}
+
+@media (min-width: 640px) {
+	/* Small screens (sm) */
+	.coscard_container {
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust for small screens */
+	}
+}
+
+@media (min-width: 768px) {
+	/* Medium screens (md) */
+	.coscard_container {
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust for medium screens */
+	}
+}
+
+@media (min-width: 1024px) {
+	/* Large screens (lg) */
+	.coscard_container {
+		grid-template-columns: repeat(auto-fit, minmax(276px, 1fr)); /* Adjust for large screens */
+	}
+}
+
+/* Details Career/ Top Companies css */
+
+/* Add border, padding, gap, and border-radius to the table */
+.top-companies-table {
+	border: 1px solid #f2f2f2;
+	border-radius: 8px;
+	padding: 16px;
+	gap: 16px;
+}
+
+/* Border between thead and tbody */
+.top-companies-table thead {
+	border-bottom: 1px solid #f2f2f2;
+}
+
+/* Details career/ keypoints css */
+.keypoint_container {
+	border: 1px solid #f2f2f2;
+}
+
+/* details career/jobopening */
+.jobopening_container {
+	border: 1px solid #e6e6e6;
+	box-shadow: 0px 1px 2px 0px #0000000d;
+}
+
+/* Added styles for mobile screens to ensure images stay inside their respective cards */
+
+/* Mobile styles */
+@media (max-width: 768px) {
+	.headcard_container {
+		position: relative;
+		overflow: hidden;
+	}
+
+	/* Adjust images inside the cards */
+	.headcard_container img {
+		position: absolute;
+		bottom: 0;
+		right: -10px;
+		max-width: 100%;
+		max-height: 100%;
+		object-fit: contain;
+	}
+}

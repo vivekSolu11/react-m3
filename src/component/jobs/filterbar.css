@@ -1,0 +1,42 @@
+.filter-wrap {
+	padding: 8px 18px 8px 0;
+	border-right: 1px solid #e6e6e6;
+}
+.active-tabs-style {
+	border-right: 4px solid var(--primary);
+}
+.wrapper {
+	border-right: 1px solid var(--gray);
+}
+.tab {
+	border-bottom: 1px solid var(--gray);
+}
+
+@media (max-width: 541px) {
+	.recommendation-filter {
+		position: absolute;
+		bottom: 80px;
+		background: white;
+		border-radius: 200px;
+		z-index: 10;
+		/* box-shadow: 0 6px #ffffff; */
+		padding: 8px 12px;
+		border: 2px solid #ffffff;
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		box-shadow:
+			0px 8px 24px 0px #0000001f,
+			0px 1px 2px 0px #00000014;
+	}
+	.hide-default-arrow {
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		background-image: none;
+	}
+	.hide-default-arrow svg {
+		display: none;
+	}
+}

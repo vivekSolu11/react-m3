@@ -1,0 +1,11 @@
+/* banner css */
+.banner_container {
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 42.5%);
+}
+
+/* interviewQues css */
+.relevant_btn {
+	border: 1px solid #e6e6e6;
+	box-shadow: 0px 1px 2px 0px #0000000d;
+	border-radius: 4px;
+}

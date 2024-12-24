@@ -1,0 +1,81 @@
+.frame {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 500;
+	justify-content: center;
+	max-width: 1200px;
+	margin: 80px auto 0;
+	padding: 16px 0 56px;
+}
+
+@media (max-width: 991px) {
+	.frame {
+		padding: 0 20px;
+		margin-bottom: 40px;
+	}
+}
+
+.jobSection {
+	display: flex;
+	max-width: 100%;
+	width: 1200px;
+	align-items: flex-start;
+	gap: 24px;
+	justify-content: flex-start;
+}
+
+.jobCategory {
+	display: flex;
+	min-width: 240px;
+	width: 100%;
+	flex-direction: column;
+	justify-content: flex-start;
+	flex: 1;
+	flex-basis: 0%;
+}
+
+@media (max-width: 991px) {
+	.jobCategory {
+		max-width: 100%;
+	}
+}
+
+.categoryTitle {
+	color: #1a1a1a;
+	font-size: 20px;
+	margin-top: 40px;
+}
+
+.jobList {
+	display: grid;
+	grid-template-columns: repeat(
+		auto-fill,
+		minmax(240px, 1fr)
+	); /* Adjust minmax for desired column width */
+	gap: 16px 40px; /* Gap between grid items */
+	margin-top: 24px;
+	width: 100%;
+	font-size: 14px;
+	color: #666;
+	line-height: 1;
+	list-style-type: none; /* Removes bullets from list items */
+}
+
+.jobList {
+	list-style-type: none; /* Removes bullets from list items */
+	padding-left: 0; /* Removes the default padding */
+}
+
+@media (max-width: 991px) {
+	.jobList {
+		max-width: 100%;
+		grid-template-columns: repeat(2, 1fr); /* Force two columns on mobile screens */
+		gap: 16px; /* Adjust gap if necessary for smaller screens */
+	}
+}
+
+.jobItem {
+	flex-grow: 1;
+	/* width: 192px; */
+}

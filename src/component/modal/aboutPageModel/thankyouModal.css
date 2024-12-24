@@ -1,0 +1,20 @@
+#form-dialog {
+	display: flex;
+	justify-content: center;
+}
+.thankYou {
+	display: flex;
+	justify-content: center;
+	font-size: 24px;
+	font-weight: 500;
+	margin: 0px;
+	color: #1a1a1a;
+}
+.thank_modal [aria-labelledby='form-dialog'] {
+	width: 416px;
+}
+.reachOut {
+	color: #666666;
+	display: flex;
+	justify-content: center;
+}

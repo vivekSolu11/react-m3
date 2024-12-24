@@ -1,0 +1,33 @@
+.white_grident {
+	background: linear-gradient(-90deg, #ffffff 0%, rgba(255, 255, 255, 0) 30%);
+	height: 100%;
+	width: 15%;
+	right: 0;
+	z-index: 3;
+}
+
+.tab {
+	width: auto;
+}
+@media (max-width: 400px) {
+	.tab {
+		padding: 6px 8px !important;
+		min-width: fit-content !important;
+		width: fit-content !important;
+	}
+	.swiper_box_text {
+		font-size: 12px;
+		line-height: 18px;
+	}
+	.discover_Container {
+		padding-left: 16px;
+	}
+	.quebox {
+		width: 220px !important;
+		height: 96px !important;
+	}
+	.blurred-card .quebox {
+		filter: blur(4px);
+		opacity: 0.5;
+	}
+}

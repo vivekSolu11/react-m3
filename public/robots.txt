@@ -1,0 +1,8 @@
+# Allow all crawlers full access
+User-agent: *
+Disallow:
+
+
+# Link to the sitemap
+Sitemap: https://dev-user.joblo.ai/sitemap.xml
+

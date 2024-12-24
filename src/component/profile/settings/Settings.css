@@ -1,0 +1,16 @@
+.switch-button {
+	border: 1px solid #d1d1d1;
+}
+.inputField {
+	align-self: stretch;
+	flex: 1;
+	border-radius: 8px;
+	border: 1px solid var(--Border-Default, #e6e6e6);
+	background: var(--Neutral-Neutral-100, #fff);
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+	margin-top: 8px;
+	gap: 12px;
+	font-size: 14px;
+	font-weight: 400;
+	padding: 16px;
+}

@@ -1,0 +1,27 @@
+.generate_token_modal {
+	z-index: 1050;
+}
+
+.token-detail-modal .modal-dialog {
+	max-width: 800px;
+	width: 100%;
+}
+
+.affiliate_modal .modal-dialog {
+	max-width: 850px;
+	width: 100%;
+}
+
+.success_modal .modal-dialog {
+	max-width: 600px;
+	width: 100%;
+}
+
+.forget_modal .modal-dialog {
+	max-width: 485px;
+	width: 100%;
+}
+.wallet_content_modal .modal-dialog {
+	max-width: 620px;
+	width: 100%;
+}
